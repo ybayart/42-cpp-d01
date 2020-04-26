@@ -15,7 +15,7 @@
 
 # include <iostream>
 # include <fstream>
-# include <string>
+# include <string.h>
 # include <libgen.h>
 
 void	ft_reading(char *name, char *file);

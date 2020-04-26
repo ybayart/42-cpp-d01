@@ -27,7 +27,6 @@ void	ft_reading(char *name, char *file)
 		in.open(file);
 		if (!in)
 			std::cerr << basename(name) << ": " << file << ": " << strerror(errno) << std::endl;
-		while (std::getline(in, line))
-			std::cout << line << std::endl;
+		std::cout << in.rdbuf();
 	}
 }
