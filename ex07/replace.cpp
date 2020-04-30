@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/09 20:33:52 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/09 20:59:09 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/04/30 15:24:34 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ int		main(int argc, char **argv)
 	}
 	search = argv[2];
 	replace = argv[3];
-	len = search.length();
+	if ((len = search.length()) == 0)
+		return (1);
 	while (std::getline(in, line))
 	{
 		while (1)
