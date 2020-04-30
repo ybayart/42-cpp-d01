@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 18:37:25 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/08 20:09:53 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/04/30 04:16:31 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,9 @@ void	ZombieHorde::advert(void)
 	i = -1;
 	while (++i < m_nbZombie)
 		m_horde[i].advert();
+}
+
+ZombieHorde::~ZombieHorde(void)
+{
+	delete[] this->m_horde;
 }

@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 18:34:17 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/08 19:38:15 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/04/30 04:16:46 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class	ZombieHorde
 	public:
 	
 	ZombieHorde(int n);
-//	~ZombieHorde();
+	~ZombieHorde();
 	void	advert(void);
 };
 

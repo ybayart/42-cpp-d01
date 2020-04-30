@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 17:35:54 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/08 18:28:23 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/04/30 04:14:37 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int		main(void)
 	Zombie		*zomb1 = event.newZombie("Bob le bricoleur");
 	Zombie		*zomb2 = event.newZombie("OuiOui le taxi");
 
+	std::cout << std::endl;
 	i = -1;
 	event.setZombieType("Missing");
 	while (++i < 10)
