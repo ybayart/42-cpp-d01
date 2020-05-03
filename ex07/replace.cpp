@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/09 20:33:52 by ybayart           #+#    #+#             */
-/*   Updated: 2020/04/30 15:24:34 by hexa             ###   ########.fr       */
+/*   Updated: 2020/05/03 15:09:39 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,10 @@ int		main(int argc, char **argv)
 		std::cerr << "Invalid arguments" << std::endl;
 		return (1);
 	}
+	search = argv[2];
+	replace = argv[3];
+	if ((len = search.length()) == 0 || search == replace)
+		return (1);
 	std::ifstream	in(argv[1]);
 	std::ofstream	out(argv[1] + std::string(".replace"));
 	if (!in || !out)
@@ -34,10 +38,6 @@ int		main(int argc, char **argv)
 		std::cerr << "Could not open file" << std::endl;
 		return (1);
 	}
-	search = argv[2];
-	replace = argv[3];
-	if ((len = search.length()) == 0)
-		return (1);
 	while (std::getline(in, line))
 	{
 		while (1)
