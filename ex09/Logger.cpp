@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/09 21:52:06 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/09 22:14:30 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/05/06 04:54:48 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Logger::Logger(std::string filename)
 {
-	m_file.open(filename);
+	m_file.open(filename.c_str());
 }
 
 void		Logger::logToConsole(std::string log)

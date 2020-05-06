@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 19:11:22 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/08 19:43:52 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/05/03 17:23:50 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		main(void)
 {
-	ZombieHorde	horde(42);
+	ZombieHorde	horde(2);
 
 	horde.advert();
 }

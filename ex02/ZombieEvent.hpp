@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 17:46:14 by ybayart           #+#    #+#             */
-/*   Updated: 2020/01/08 18:22:26 by ybayart          ###   ########.fr       */
+/*   Updated: 2020/05/06 04:51:22 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "Zombie.hpp"
 # include <string>
+# include <cstdlib>
 
 class	ZombieEvent
 {

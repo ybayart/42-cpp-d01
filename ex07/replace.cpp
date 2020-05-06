@@ -6,7 +6,7 @@
 /*   By: ybayart <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/09 20:33:52 by ybayart           #+#    #+#             */
-/*   Updated: 2020/05/03 15:09:39 by hexa             ###   ########.fr       */
+/*   Updated: 2020/05/06 04:54:18 by hexa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int		main(int argc, char **argv)
 	if ((len = search.length()) == 0 || search == replace)
 		return (1);
 	std::ifstream	in(argv[1]);
-	std::ofstream	out(argv[1] + std::string(".replace"));
+	std::ofstream	out((argv[1] + std::string(".replace")).c_str());
 	if (!in || !out)
 	{
 		std::cerr << "Could not open file" << std::endl;
